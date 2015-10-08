@@ -1,5 +1,4 @@
-<snippet>
-  <content><![CDATA[
+
 # ${1:Whats_New_In_Java8}
 you find in this project a several examples of the new features in Java 8 
 ## Lambda Expression
@@ -23,6 +22,3 @@ Runnable runnableLambda = () -> {
 ```java
 Comparator<String> lambdaComparator = (String s1, String s2) -> Integer.compare(s1.length(), s2.length());
 ```
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
