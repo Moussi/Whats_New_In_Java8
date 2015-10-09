@@ -1,5 +1,5 @@
 
-# ${1:Whats_New_In_Java8}
+# 1:Whats_New_In_Java8
 you find in this project a several examples of the new features in Java 8 
 ## Lambda Expression
 ###What is a Lambda Expression For? 
