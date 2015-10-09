@@ -6,7 +6,8 @@ you find in this project a several examples of the new features in Java 8
 1. What is a Lambda Expression For? Answer: To make instances of anonymos classes easier to write and then easier to read.
 2. What is the type of lambda expression ? Answer: a Functional Interface.
 3. Can I put a Lambda Expression ain a variable ? Answer: Yes =>> Consequences: a lambda expression can be taken as a method parameter, and can be returned by a method.
-4. Is a lambda an object ? Answer: a lambda expression is an object without an identity => see the example RunnubleLambda.java or ComparatorLambda.java => A lambda expression is created without using *new*.
+4. Is a lambda an object ? Answer: a lambda expression is an object without an identity => see the example RunnubleLambda.java or ComparatorLambda.java => A lambda expression is created without using **new** .
+
 ### Several ways of writing lambda Expressions
 1. The simplest way
 ```java
@@ -24,6 +25,7 @@ Runnable runnableLambda = () -> {
 ```java
 Comparator<String> lambdaComparator = (String s1, String s2) -> Integer.compare(s1.length(), s2.length());
 ```
+
 ### Functional Interface
 1. Functional interface is an interface with only one abstract method.
 Example : 
@@ -101,4 +103,22 @@ public interface UnaryOperator<T> extends Function<T, T>{
 @FunctionalInterface
 public interface BinaryOperator<T> extends BiFunction<T, T, T>{
 }
+```
+
+### Method Reference
+1. Exampel 1
+```java
+Consumer<String> c = s -> system.out.println(s);
+```
+can be written like that:
+```java
+Consumer<String> c = system.out::println;
+```
+2. Exampel 2
+```java
+Comparator<Integer> c = (i1, i2) -> Integer.compare(i1, i2);
+```
+can be written like that:
+```java
+Comparator<Integer> c = Integer::compare;
 ```
