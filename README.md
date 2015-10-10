@@ -122,3 +122,22 @@ can be written like that:
 ```java
 Comparator<Integer> c = Integer::compare;
 ```
+### Default Methods
+One of the revolutionary concepts on JAVA 8 are the **default methods**.
+putting code in an interface is a new concept on java 8 by adding the keyword **default** before the method implementation on the interface like this example.
+```java
+public interface Iterable<E> {
+  // the usual methods 
+  ...
+
+  default void forEach(Consumer<E> consumer){
+  for(E e : this){
+  accept(e);
+  }
+  }
+}
+```
+it allows to change the old interfaces without breaking the existing implementations.
+it allows new patterns!
+
+and by the way static methods are also allowed in java 8 interfaces.
