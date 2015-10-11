@@ -6,7 +6,7 @@ you find in this project a several examples of the new features in Java 8
 1. What is a Lambda Expression For? Answer: To make instances of anonymos classes easier to write and then easier to read.
 2. What is the type of lambda expression ? Answer: a Functional Interface.
 3. Can I put a Lambda Expression ain a variable ? Answer: Yes =>> Consequences: a lambda expression can be taken as a method parameter, and can be returned by a method.
-4. Is a lambda an object ? Answer: a lambda expression is an object without an identity => see the example RunnubleLambda.java or ComparatorLambda.java => A lambda expression is created without using **new** .
+4. Is a lambda an object ? Answer: a lambda expression is an object without an identity => see the example RunnubleLambda.java or ComparatorLambda.java => A lambda expression is created without using **new** .  
 
 ### Several ways of writing lambda Expressions
 1. The simplest way
@@ -123,7 +123,7 @@ can be written like that:
 Comparator<Integer> c = Integer::compare;
 ```
 ### Default Methods
-One of the revolutionary concepts on JAVA 8 are the **default methods**.
+One of the revolutionary concepts on JAVA 8 are the **default methods**.  
 putting code in an interface is a new concept on java 8 by adding the keyword **default** before the method implementation on the interface like this example.
 ```java
 public interface Iterable<E> {
@@ -137,7 +137,25 @@ public interface Iterable<E> {
   }
 }
 ```
-it allows to change the old interfaces without breaking the existing implementations.
-it allows new patterns!
+it allows to change the old interfaces without breaking the existing implementations.  
+it allows new patterns!  
 
-and by the way static methods are also allowed in java 8 interfaces.
+and by the way static methods are also allowed in java 8 interfaces.  
+## Java 8 Stream API and Collectors
+1. Map/Filter/Reduce
+2. Streams
+it gives way to efficiently process large amounts of data ... and aloso smaller ones.  
+In parallel, to laverage the computing power of multicore CPUs.  
+Pipelined, to avoid unecassary intermediary computations.  
+A stream is an object on which one can define opertaions  
+it is an object that does not hold any data  
+it is an object that shoul not change the data it processes  
+Stream Patterns  
+First Operation : forEach()  
+```java
+List<Person> persons = ... ;
+Stream<Person> stream = persons.stream();
+stream.forEach(system.out::println);
+```
+prints all the arguments of the list.  
+it takes an instance of consumer as an argument.  
