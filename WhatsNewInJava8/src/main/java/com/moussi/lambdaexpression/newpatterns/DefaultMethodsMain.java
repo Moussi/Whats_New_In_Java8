@@ -1,8 +1,8 @@
 package com.moussi.lambdaexpression.newpatterns;
 
 /**
- * 
- * @author Aymen
+ * https://github.com/Moussi/Whats_New_In_Java8
+ * @author MOUSSI Aymen
  *
  */
 public class DefaultMethodsMain {

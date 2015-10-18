@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 /**
- * 
- * @author Aymen
+ * https://github.com/Moussi/Whats_New_In_Java8
+ * @author MOUSSI Aymen
  *
  */
 public class ListLambda {

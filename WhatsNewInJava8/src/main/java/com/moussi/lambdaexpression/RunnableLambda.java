@@ -1,7 +1,7 @@
 package com.moussi.lambdaexpression;
 /**
- * 
- * @author AMOUSSI
+ * https://github.com/Moussi/Whats_New_In_Java8
+ * @author MOUSSI Aymen
  *
  */
 public class RunnableLambda {

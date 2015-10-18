@@ -41,7 +41,7 @@ Runnable runnable = new Runnable() {
     };
 ```
 2. New package on JDK8 **java.util.function**  => **Consequence** : we have new annotations with rich set of functional interfaces.
-3. Functional interfaces Categories:
+3. Functional interfaces Categories:  
 --* Supplier : is single interface that doesn't take any object as parameter and that provides an object.
 ```java
 @FunctionalInterface
@@ -143,7 +143,7 @@ it allows new patterns!
 and by the way static methods are also allowed in java 8 interfaces.  
 ## Java 8 Stream API and Collectors
 1. Map/Filter/Reduce
-2. Streams
+2. Streams  
 it gives way to efficiently process large amounts of data ... and aloso smaller ones.  
 In parallel, to laverage the computing power of multicore CPUs.  
 Pipelined, to avoid unecassary intermediary computations.  
@@ -159,3 +159,17 @@ stream.forEach(system.out::println);
 ```
 prints all the arguments of the list.  
 it takes an instance of consumer as an argument.  
+**Filter a Stream**  
+Example:  
+```java
+Predicate<String> p = Predicate.isEqual("two");  
+  
+the difference between **forEach** and **peek** on stream opertaions that:  
+**ForEach** is a final operation.  
+**Peek** is an intermediary operation.  
+**Map a stream**   
+Map() is an intermediary operation of  stream  
+flatMap() return a stream of stream  
+**Reducing**  
+
+

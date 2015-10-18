@@ -6,11 +6,10 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * 
- * @author AMOUSSI
+ * https://github.com/Moussi/Whats_New_In_Java8
+ * @author MOUSSI Aymen
  *
- */
-public class ComparatorLambda {
+ */public class ComparatorLambda {
   public static void main(String[] args) {
     Comparator<String> comparator = new Comparator<String>() {
 

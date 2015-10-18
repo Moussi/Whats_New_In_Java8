@@ -1,5 +1,10 @@
 package com.moussi.lambdaexpression.newpatterns;
 
+/**
+ * https://github.com/Moussi/Whats_New_In_Java8
+ * @author MOUSSI Aymen
+ *
+ */
 public interface Icalculator {
 
 	int add(int a, int b);
